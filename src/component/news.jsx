@@ -11,9 +11,7 @@ export default class News extends Component {
                 <h2>Selamat datang di hasymi's blog</h2>
                 <p>Berbagai tulisan mengenai proses belajar React JS</p>
             </Jumbotron>
-            <Link to="/">
-                <Button variant="info">Back to Home</Button>
-            </Link>
+           
         </Container>
         )
     }

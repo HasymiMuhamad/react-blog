@@ -11,9 +11,7 @@ export default class About extends Component {
                     <h1>ABOUT PAGE</h1>
                     <p>Ini adalah halaman page</p>
                 </Jumbotron>
-                <Link to="/">
-                    <Button variant="info">Back to Home</Button>
-                </Link>
+                
             </Container>
         )
     }
