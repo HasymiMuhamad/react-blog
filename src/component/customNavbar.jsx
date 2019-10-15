@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Navbar, Nav, NavItem, Form, FormControl, Button} from 'react-bootstrap'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+
 import Home from './home.jsx'
 import News from './news.jsx'
 import About from './about.jsx'
@@ -22,6 +23,7 @@ class CustomNavbar extends Component {
               <Button variant="outline-light">Search</Button>
             </Form>
           </Navbar>
+          
         )
     }
 }

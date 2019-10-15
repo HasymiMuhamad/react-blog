@@ -5,20 +5,23 @@ import Home from './component/home.jsx';
 import About from './component/about.jsx';
 import News from './component/news.jsx';
 import Navbar from './component/customNavbar'
+import Footer from './component/footer'
 
 class App extends Component{
   render (){
     return (
       <div>
+        <Navbar/>
         <Router>
-        <div>
-          <Navbar/>
-          <br/>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/news" component={News} />
-        </div>
-      </Router>
+          <div>
+            <br/>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/news" component={News} />
+          </div>
+        </Router>
+        
+        <Footer/>
       </div>
       
     );

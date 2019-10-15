@@ -1,154 +1,136 @@
 import React, {Component} from 'react'
 import {Container} from 'react-bootstrap'
+import {MDBCol, MDBContainer, MDBRow, MDBFooter} from 'mdbreact'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 
 
 export default class Footer extends Component {
     render (){
         return (
             <Container>
-                {/* <!-- Footer -->
-<footer class="page-footer font-small unique-color-dark">
-
-  <div style="background-color: #6351ce;">
-    <div class="container">
-
-      <!-- Grid row-->
-      <div class="row py-4 d-flex align-items-center">
-
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-          <h6 class="mb-0">Get connected with us on social networks!</h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-7 text-center text-md-right">
-
-          <!-- Facebook -->
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f white-text mr-4"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic">
-            <i class="fab fa-twitter white-text mr-4"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic">
-            <i class="fab fa-google-plus-g white-text mr-4"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic">
-            <i class="fab fa-linkedin-in white-text mr-4"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fab fa-instagram white-text"> </i>
-          </a>
-
-        </div>
-        <!-- Grid column -->
-
+             <MDBFooter color="blue-grey" className="page-footer font-small lighten-5 pt-0">
+      <div style={{ backgroundColor: "#21d192" }}>
+        <MDBContainer>
+          <MDBRow className="py-4 d-flex align-items-center">
+            <MDBCol md="6" lg="5" className="text-center text-md-left mb-4 mb-md-0">
+              <h6 className="mb-0 white-text">
+                Get connected with us on social networks!
+              </h6>
+            </MDBCol>
+            <MDBCol md="6" lg="7" className="text-center text-md-right">
+              <a className="fb-ic ml-0">
+                <i className="fab fa-facebook-f white-text mr-lg-4"> </i>
+              </a>
+              <a className="tw-ic">
+                <i className="fab fa-twitter white-text mr-lg-4"> </i>
+              </a>
+              <a className="gplus-ic">
+                <i className="fab fa-google-plus-g white-text mr-lg-4"> </i>
+              </a>
+              <a className="li-ic">
+                <i className="fab fa-linkedin-in white-text mr-lg-4"> </i>
+              </a>
+              <a className="ins-ic">
+                <i className="fab fa-instagram white-text mr-lg-4"> </i>
+              </a>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
       </div>
-      <!-- Grid row-->
-
-    </div>
-  </div>
-
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left mt-5">
-
-    <!-- Grid row -->
-    <div class="row mt-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-        <!-- Content -->
-        <h6 class="text-uppercase font-weight-bold">Company name</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-          consectetur
-          adipisicing elit.</p>
-
+      <MDBContainer className="mt-5 mb-4 text-center text-md-left">
+        <MDBRow className="mt-3">
+          <MDBCol md="3" lg="4" xl="3" className="mb-4 dark-grey-text">
+            <h6 className="text-uppercase font-weight-bold">
+              <strong>Company name</strong>
+            </h6>
+            <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
+            <p>
+              Here you can use rows and columns here to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </MDBCol>
+          <MDBCol md="2" lg="2" xl="2" className="mb-4 dark-grey-text">
+            <h6 className="text-uppercase font-weight-bold">
+              <strong>Products</strong>
+            </h6>
+            <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
+            <p>
+              <a href="#!" className="dark-grey-text">
+                MDBootstrap
+              </a>
+            </p>
+            <p>
+              <a href="#!" className="dark-grey-text">
+                MDWordPress
+              </a>
+            </p>
+            <p>
+              <a href="#!" className="dark-grey-text">
+                BrandFlow
+              </a>
+            </p>
+            <p>
+              <a href="#!" className="dark-grey-text">
+                Bootstrap Angular
+              </a>
+            </p>
+          </MDBCol>
+          <MDBCol md="3" lg="2" xl="2" className="mb-4 dark-grey-text">
+            <h6 className="text-uppercase font-weight-bold">
+              <strong>Useful links</strong>
+            </h6>
+            <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
+            <p>
+              <a href="#!" className="dark-grey-text">
+                Your Account
+              </a>
+            </p>
+            <p>
+              <a href="#!" className="dark-grey-text">
+                Become an Affiliate
+              </a>
+            </p>
+            <p>
+              <a href="#!" className="dark-grey-text">
+                Shipping Rates
+              </a>
+            </p>
+            <p>
+              <a href="#!" className="dark-grey-text">
+                Help
+              </a>
+            </p>
+          </MDBCol>
+          <MDBCol md="4" lg="3" xl="3" className="mb-4 dark-grey-text">
+            <h6 className="text-uppercase font-weight-bold">
+              <strong>Contact</strong>
+            </h6>
+            <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
+            <p>
+              <i className="fa fa-home mr-3" /> New York, NY 10012, US
+            </p>
+            <p>
+              <i className="fa fa-envelope mr-3" /> info@example.com
+            </p>
+            <p>
+              <i className="fa fa-phone mr-3" /> + 01 234 567 88
+            </p>
+            <p>
+              <i className="fa fa-print mr-3" /> + 01 234 567 89
+            </p>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Copyright:{" "}
+          <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+        </MDBContainer>
       </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Products</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="#!">MDBootstrap</a>
-        </p>
-        <p>
-          <a href="#!">MDWordPress</a>
-        </p>
-        <p>
-          <a href="#!">BrandFlow</a>
-        </p>
-        <p>
-          <a href="#!">Bootstrap Angular</a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="#!">Your Account</a>
-        </p>
-        <p>
-          <a href="#!">Become an Affiliate</a>
-        </p>
-        <p>
-          <a href="#!">Shipping Rates</a>
-        </p>
-        <p>
-          <a href="#!">Help</a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Contact</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-        <p>
-          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
-        <p>
-          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-        <p>
-          <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer --></div> */}
+    </MDBFooter>
 </Container>
         )
     }
